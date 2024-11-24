@@ -4,14 +4,24 @@ import Home from "./components/Home";
 import TestOauth2 from "./components/TestOauth2";
 
 function App() {
+    const url = window.location.href;
+    const pathname = window.location.pathname;
+    const protocol = window.location.protocol;
+    const hostname = window.location.hostname;
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/aas" element={<TestOauth2/>}/>
-
-            </Routes>
-        </BrowserRouter>
+        <div>
+            You are currently accessing <b>{url}</b><br />
+            Pathname: <b>{pathname}</b><br />
+            Protocol: <b>{protocol}</b><br />
+            Hostname: <b>{hostname}</b>
+        </div>
+        // <BrowserRouter>
+        //     <Routes>
+        //         <Route path="/" element={<Home/>}/>
+        //         <Route path="/aas" element={<TestOauth2/>}/>
+        //
+        //     </Routes>
+        // </BrowserRouter>
     );
 }
 

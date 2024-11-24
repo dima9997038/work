@@ -9,20 +9,20 @@ function App() {
     const protocol = window.location.protocol;
     const hostname = window.location.hostname;
     return (
-        <div>
-            <h1>Start</h1>
-            You are currently accessing <b>{url}</b><br />
-            Pathname: <b>{pathname}</b><br />
-            Protocol: <b>{protocol}</b><br />
-            Hostname: <b>{hostname}</b>
-        </div>
-        // <BrowserRouter>
-        //     <Routes>
-        //         <Route path="/" element={<Home/>}/>
-        //         <Route path="/aas" element={<TestOauth2/>}/>
-        //
-        //     </Routes>
-        // </BrowserRouter>
+        // <div>
+        //     <h1>Start</h1>
+        //     You are currently accessing <b>{url}</b><br />
+        //     Pathname: <b>{pathname}</b><br />
+        //     Protocol: <b>{protocol}</b><br />
+        //     Hostname: <b>{hostname}</b>
+        // </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/aas" element={<TestOauth2/>}/>
+
+            </Routes>
+        </BrowserRouter>
     );
 }
 

@@ -10,6 +10,7 @@ function App() {
     const hostname = window.location.hostname;
     return (
         <div>
+            <h1>Start</h1>
             You are currently accessing <b>{url}</b><br />
             Pathname: <b>{pathname}</b><br />
             Protocol: <b>{protocol}</b><br />
